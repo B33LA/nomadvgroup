@@ -1,0 +1,7 @@
+///BOJA
+
+4141DC - *Primary Accent (Vivid Blue)*
+020514 - *Primary Background (Deep Navy)*
+3131A8 - *Secondary Accent (Darker Blue)*
+FCFCFC - *Sedondary text (Light Gray)
+15112C - *Dark Purple (Used for Contrast and Depth)*
