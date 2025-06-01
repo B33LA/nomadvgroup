@@ -62,8 +62,7 @@ header {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 160px;
     transition: transform var(--transition-speed) ease;
 }
 .logo img:hover {
@@ -343,7 +342,7 @@ main {
 .final-cta {
     margin-top: 120px;
     text-align: center;
-    padding: 0 20px 80px;
+    padding: 0 20px 60px;
 }
 .final-cta h2 {
     font-size: 3rem;
@@ -358,6 +357,16 @@ main {
     margin: 0 auto 30px;
     color: var(--color-text);
     line-height: 1.6;
+}
+/* Calendly Inline Widget Container (Desktop) */
+.final-cta .calendly-inline-widget {
+    width: 100%;
+    max-width: 700px;
+    height: 700px;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 /* ============================= */
@@ -415,19 +424,15 @@ main {
     align-self: center;
 }
 
-/* ============================= */
-/*       CALENDLY WIDGET STYLES   */
-/* ============================= */
-/* Container around Calendly embed */
-.calendly-widget,
-.calendly-inline-widget {
-    background-color: var(--color-surface);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
+/* Calendly Secondary Widget Container */
+.calendly-widget {
     width: 100%;
     max-width: 600px;
+    height: 630px;
     margin: 0 auto 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 /* ============================= */
@@ -475,10 +480,12 @@ footer {
     .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .final-cta .calendly-inline-widget {
+        height: 600px;
+    }
 }
 @media (max-width: 768px) {
-    .services-container,
-    .testimonial-container {
+    .services-container {
         grid-template-columns: 1fr;
     }
     .hero h1 {
@@ -490,9 +497,10 @@ footer {
     main {
         padding: 40px 20px;
     }
-    .calendly-widget,
-    .calendly-inline-widget {
-        max-width: 100%;
-        height: auto !important;
+    .final-cta .calendly-inline-widget {
+        height: 500px;
+    }
+    .calendly-widget {
+        height: 500px;
     }
 }
