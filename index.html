@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomad V Group – Landing Page</title>
+  <link rel="icon" href="Logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="logo">
+      <a href="#hero"><img src="images/logo.png" alt="Nomad V Group Logo" /></a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero fade-in">
+      <div class="hero-content">
+        <h1>Nomad V Group</h1>
+        <p>
+          Full-stack remote specialists in Sales Outreach, Web Development, & Back Office. We build
+          lean, scalable systems so your small team can focus on growth.
+        </p>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView()">Get Started</button>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-overview fade-in">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <h3>Sales & Outreach</h3>
+          <p>
+            Targeted LinkedIn campaigns, cold calling, and email funnels designed to book qualified
+            meetings for your company.
+          </p>
+          <a href="#contact" class="cta-button small">Schedule a Consult</a>
+        </div>
+        <div class="service-card">
+          <h3>Web Development & Design</h3>
+          <p>
+            Futuristic, responsive websites and web apps built to convert—perfectly optimized for any
+            device.
+          </p>
+          <a href="#contact" class="cta-button small">Request a Quote</a>
+        </div>
+        <div class="service-card">
+          <h3>Back Office & Email Management</h3>
+          <p>
+            Offload data entry, CRM updates, and inbox overload to our remote professionals—unlock
+            true focus on core business.
+          </p>
+          <a href="#contact" class="cta-button small">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section fade-in">
+      <h2>About Us</h2>
+      <p>
+        Nomad V Group is a 100% remote agency built around a simple principle: assemble the right
+        specialists in the right place to deliver exceptional service. We believe that when each
+        expert focuses solely on their core strength—whether it’s sales outreach, web development,
+        or back-office management—our clients receive maximum value with zero overhead.
+      </p>
+      <p>
+        Our team spans multiple time zones and disciplines. From seasoned LinkedIn outreach
+        strategists to top-tier front-end and back-end developers to dedicated back-office
+        coordinators, we hand-pick professionals who excel in their niche. By operating fully
+        remote, we remain lean, flexible, and able to scale quickly in response to your needs.
+      </p>
+      <p>
+        Every project is overseen by a dedicated project lead who ensures seamless communication
+        between you and our specialists. We use agile workflows and transparent reporting so you
+        always know exactly where your investment is going—and why.
+      </p>
+      <p>
+        At Nomad V Group, our mission is to empower small teams and startups to grow without
+        friction. Whether you need a high-velocity LinkedIn campaign, a futuristic responsive
+        website, or a streamlined back-office process, we have the right experts ready to focus 100%
+        on your success.
+      </p>
+    </section>
+
+    <!-- FINAL CALL-TO-ACTION SECTION -->
+    <section class="final-cta fade-in">
+      <h2>Ready to Scale Your Small Team?</h2>
+      <p>
+        Schedule a free strategy session with one of our leads and discover how Nomad V Group can
+        take your business to the next level.
+      </p>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/nomadvgroup-info/30min" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section fade-in">
+      <h2>Get in Touch</h2>
+      <p>
+        Fill out the form below or directly schedule a meeting via our Calendly widget—whichever is
+        easiest for you.
+      </p>
+
+      <!-- Simple Contact Form -->
+      <form action="mailto:info@nomadvgroup.com" method="post" enctype="text/plain" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit" class="cta-button small">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content fade-in">
+      <p>&copy; 2025 Nomad V Group. All Rights Reserved.</p>
+      <p>
+        <a href="https://www.linkedin.com/company/nomadvgroup" target="_blank">LinkedIn</a> |
+        <a href="mailto:info@nomadvgroup.com">info@nomadvgroup.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
