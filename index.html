@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nomad Visionaries Group — LinkedIn Growth Partner</title>
+  <meta name="description" content="Nomad Visionaries Group helps B2B teams grow on LinkedIn with premium content, inbound systems, and outbound pipelines. Personal branding, ICP definition, lead generation, outreach, recruitment, and inbound customer service — all operated from client profiles." />
+  <meta name="theme-color" content="#463187" />
+  <link rel="canonical" href="https://www.nomadvgroup.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nomad Visionaries Group — LinkedIn Growth Partner" />
+  <meta property="og:description" content="Premium LinkedIn content, inbound, and outbound systems for predictable growth." />
+  <meta property="og:url" content="https://www.nomadvgroup.com" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --purple:#463187;
+      --purple-700:#37276b;
+      --light-purple:#e0d6ff;
+      --black:#2c262e;
+      --green:#c1ff75;
+      --white:#fff;
+      --bg:#0f0d11;
+      --text:#ebe8f5;
+      --muted:#bcb3d9;
+      --card:#17131c;
+      --card-2:#1d1824;
+      --shadow:0 20px 50px rgba(0,0,0,.45);
+      --radius:18px;
+      --radius-lg:26px;
+      --maxw:1200px;
+      --blur:14px;
+      --safe:15px; /* universal side padding */
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(193,255,117,.10), transparent 60%),
+        radial-gradient(900px 400px at -10% 10%, rgba(224,214,255,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      overflow-x:hidden;
+      padding-inline:var(--safe); /* breathing room on both sides */
+    }
+
+    .container{max-width:var(--maxw); margin-inline:auto; padding-inline:0}
+
+    /* Header */
+    .header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(var(--blur)); background:rgba(22,18,28,.55); border-bottom:1px solid rgba(224,214,255,.12)}
+    .nav{display:flex; align-items:center; justify-content:space-between; min-height:72px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:42px; height:42px; background: conic-gradient(from 210deg, var(--purple), #6b53d6, var(--purple)); border-radius:12px; position:relative; box-shadow:0 10px 30px rgba(70,49,135,.35)}
+    .logo::after{content:""; position:absolute; inset:6px; border-radius:8px; background: radial-gradient(circle at 30% 30%, rgba(193,255,117,.8), transparent 40%), linear-gradient(145deg, rgba(224,214,255,.35), rgba(193,255,117,.15)); mix-blend: screen}
+    .brand h1{font-size: clamp(16px, 2.2vw, 20px); letter-spacing:.3px; font-weight:700}
+
+    .nav-links{display:flex; gap:20px}
+    .nav-links a{padding:10px 12px; border-radius:12px; color:var(--light-purple); position:relative}
+    .nav-links a::after{content:""; position:absolute; left:12px; right:12px; bottom:6px; height:2px; background:linear-gradient(90deg, transparent, var(--green), transparent); transform:scaleX(0); transform-origin:center; transition:transform .35s ease}
+    .nav-links a:hover{color:var(--white)}
+    .nav-links a:hover::after{transform:scaleX(1)}
+
+    .cta-btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:14px; border:1px solid rgba(224,214,255,.2); background: linear-gradient(120deg, var(--purple), #6b53d6 40%, var(--purple)); box-shadow:var(--shadow); position:relative; overflow:hidden; cursor:pointer}
+    .cta-btn span.badge{background: var(--green); color:#17171a; padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700}
+    .cta-btn::before{content:""; position:absolute; inset:-120% -40%; background: linear-gradient(120deg, rgba(255,255,255,.00) 30%, rgba(255,255,255,.35) 50%, rgba(255,255,255,.00) 70%); transform:rotate(8deg);}
+    .cta-btn:hover::before{animation:sheen .9s ease}
+
+    @keyframes sheen{from{transform:translateX(-60%) rotate(8deg)}to{transform:translateX(60%) rotate(8deg)}}
+
+    .hamburger{display:none; width:42px; height:42px; border-radius:12px; border:1px solid rgba(224,214,255,.15); background:linear-gradient(180deg, #1a1422, #120e17); align-items:center; justify-content:center; cursor:pointer}
+    .hamburger svg{width:22px; height:22px}
+
+    /* Buttons */
+    .btn,.faq-q{cursor:pointer}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:14px; border:1px solid rgba(224,214,255,.14); position:relative; overflow:hidden; transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, border-color .25s ease}
+    .btn.primary{background: linear-gradient(135deg, var(--purple) 0%, #6b53d6 50%, var(--purple) 100%); color:white; box-shadow:0 10px 30px rgba(107,83,214,.3)}
+    .btn::before{content:""; position:absolute; inset:-120% -40%; background: linear-gradient(120deg, rgba(255,255,255,.00) 30%, rgba(255,255,255,.35) 50%, rgba(255,255,255,.00) 70%); transform:rotate(8deg)}
+    .btn:hover{transform: translateY(-2px); box-shadow:0 16px 40px rgba(107,83,214,.35); border-color:rgba(224,214,255,.35)}
+    .btn:hover::before{animation:sheen .9s ease}
+    .btn:active{transform: translateY(0)}
+
+    /* Utility row for centered actions */
+    .actions{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+
+    /* Hero */
+    .hero{position:relative; padding: clamp(56px, 8vw, 96px) 0}
+    .hero::before{content:""; position:absolute; inset:-20% -10% -10% -10%; background:
+      radial-gradient(800px 400px at 70% -20%, rgba(193,255,117,.08), transparent 40%),
+      radial-gradient(900px 600px at -10% 10%, rgba(224,214,255,.12), transparent 60%),
+      radial-gradient(1200px 800px at 110% 40%, rgba(70,49,135,.25), transparent 60%);
+      filter: blur(20px); z-index:-1; animation:bgShift 18s ease-in-out infinite alternate}
+    @keyframes bgShift{from{transform: translateY(0)}to{transform: translateY(-18px)}}
+
+    .hero-grid{display:grid; grid-template-columns: 1.2fr .8fr; gap: clamp(20px, 4vw, 40px); align-items:center}
+    .eyebrow{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(193,255,117,.12); color:var(--green); border:1px solid rgba(193,255,117,.35); font-weight:700; letter-spacing:.3px}
+    .hero h2{font-size: clamp(32px, 5vw, 54px); line-height:1.1; margin:14px 0; letter-spacing:.2px}
+    .hero p{color:var(--muted); font-size: clamp(16px, 2vw, 18px)}
+    .hero-cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+
+    .hero-card{background: linear-gradient(180deg, var(--card), var(--card-2)); border:1px solid rgba(224,214,255,.08); padding:20px; border-radius:var(--radius-lg); box-shadow:var(--shadow); perspective:1000px}
+    .metric{display:grid; grid-template-columns: auto 1fr auto; gap:14px; align-items:center; padding:14px; border-radius:14px; background:rgba(224,214,255,.04); margin-bottom:10px; transform: translateZ(0); will-change: transform}
+    .metric strong{font-size:24px}
+
+    /* Social icons */
+    .socials{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:10px}
+    .socials a{width:42px; height:42px; display:grid; place-items:center; border-radius:12px; border:1px solid rgba(224,214,255,.18); background:linear-gradient(180deg, #1a1422, #120e17); box-shadow:var(--shadow); transition:transform .2s ease, border-color .2s ease, box-shadow .3s ease}
+    .socials a:hover{transform:translateY(-2px); border-color:rgba(193,255,117,.5); box-shadow:0 18px 36px rgba(193,255,117,.18)}
+    .socials a svg{width:20px; height:20px}
+
+    /* Sections */
+    section{padding: clamp(48px, 6vw, 80px) 0; position:relative}
+    .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:26px}
+    .kicker{color:var(--green); font-weight:800; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
+    .h3{font-size: clamp(24px, 3.5vw, 34px); margin:6px 0}
+    .desc{color:var(--muted)}
+
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns: repeat(3, 1fr)}
+    .grid.cols-2{grid-template-columns: repeat(2, 1fr)}
+
+    .card{background:linear-gradient(180deg, var(--card), var(--card-2)); border:1px solid rgba(224,214,255,.08); padding:22px; border-radius:var(--radius); box-shadow:var(--shadow); position:relative; overflow:hidden; transform: translateZ(0); will-change: transform}
+    .card::after{content:""; position:absolute; inset: -30% -30% auto auto; width:200px; height:200px; background: radial-gradient(circle at 30% 30%, rgba(193,255,117,.15), transparent 40%); transform: rotate(15deg)}
+    .card h4{font-size: clamp(18px, 2.4vw, 22px); margin:6px 0 10px; letter-spacing:.2px}
+    .card p{color:var(--muted)}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(224,214,255,.08); color:var(--light-purple); border:1px solid rgba(224,214,255,.14); font-size:12px; margin-bottom:10px}
+
+    ul.clean{margin:10px 0 0 0; padding:0; list-style:none}
+    ul.clean li{padding-left:22px; position:relative; margin:10px 0; color:var(--muted)}
+    ul.clean li::before{content:""; position:absolute; left:0; top:9px; width:10px; height:10px; border-radius:3px; background:linear-gradient(135deg, var(--green), #9de84a)}
+
+    /* Founders */
+    #founders .grid{align-items:stretch}
+    .founder-card{display:flex; flex-direction:column; align-items:flex-start; gap:12px}
+    .founder-card .avatar{width:148px; height:148px; object-fit:cover; border-radius:18px; border:1px solid rgba(224,214,255,.14); background:#120e17; box-shadow:0 8px 24px rgba(0,0,0,.5)}
+    .founder-card h4{margin:2px 0 0}
+    .founder-card .desc{margin-top:-4px}
+
+    /* FAQ */
+    .faq{border:1px solid rgba(224,214,255,.08); border-radius:var(--radius); overflow:hidden}
+    .faq-item{border-top:1px solid rgba(224,214,255,.06)}
+    .faq-item:first-child{border-top:none}
+    .faq-q{display:flex; justify-content:space-between; gap:12px; align-items:center; padding:16px 18px; background:rgba(224,214,255,.03)}
+    .faq-a{padding:0 18px 16px; color:var(--muted); display:none}
+
+    /* CTA band */
+    .band{padding:28px; border-radius:var(--radius-lg); background:linear-gradient(90deg, rgba(193,255,117,.12), rgba(224,214,255,.10)); border:1px solid rgba(224,214,255,.12); display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(224,214,255,.1); background:#0c0a0f; padding:28px 0; margin-top:30px; color:#cbbdf0}
+    .footer-grid{display:grid; grid-template-columns: 1.4fr .8fr .8fr; gap:18px}
+    .mini{font-size:12px; color:#a99fd0}
+
+    .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1)}
+    .reveal.show{opacity:1; transform:none}
+
+    @media (prefers-reduced-motion: reduce){
+      .reveal, .btn, .cta-btn, .card, .metric, .hero::before{transition:none !important; animation:none !important}
+    }
+
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns: 1fr 1fr}
+      .grid.cols-2{grid-template-columns: 1fr}
+      .footer-grid{grid-template-columns: 1fr 1fr}
+    }
+    @media (max-width: 700px){
+      .nav-links{display:none}
+      .hamburger{display:inline-flex}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Nomad Visionaries Group home">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Nomad Visionaries Group</h1>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#founders">Founders</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="cta-btn"><span>Contact</span> <span class="badge">Let's talk</span></a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="#e0d6ff" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal" data-stagger>
+            <span class="eyebrow">LinkedIn Growth Partner</span>
+            <h2>Premium content. Predictable inbound. Scalable outbound.</h2>
+            <p>We help B2B teams grow on LinkedIn with clear positioning, consistent authority-building content, and an outbound engine that opens conversations with decision-makers. No hype—just a repeatable system that compounds.</p>
+            <div class="hero-cta actions">
+              <a href="#contact" class="btn primary magnetic">Book a discovery call</a>
+              <a href="#services" class="btn primary magnetic">See services</a>
+            </div>
+            <div class="socials hero-socials" aria-label="Social profiles">
+              <a class="social linkedin" href="https://www.linkedin.com/company/nomadvgroup" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a>
+              <a class="social facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"></a>
+              <a class="social instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"></a>
+              <a class="social x" href="#" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X"></a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Highlights" data-tilt>
+            <div class="metric">
+              <div class="chip">Positioning</div>
+              <div>
+                <strong>Clear value story</strong>
+                <div class="mini">Profiles and content that convert attention into interest.</div>
+              </div>
+              <div aria-hidden="true">⚡</div>
+            </div>
+            <div class="metric">
+              <div class="chip">Inbound</div>
+              <div>
+                <strong>Opportunities in the inbox</strong>
+                <div class="mini">Authority + consistency = warm conversations.</div>
+              </div>
+              <div aria-hidden="true">💬</div>
+            </div>
+            <div class="metric">
+              <div class="chip">Outbound</div>
+              <div>
+                <strong>Talk to the right people</strong>
+                <div class="mini">ICP, lists, and thoughtful outreach sequences.</div>
+              </div>
+              <div aria-hidden="true">🎯</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal" data-stagger>
+          <div>
+            <div class="kicker">Services</div>
+            <div class="h3">Content, Inbound, and Outbound — built to work together</div>
+            <p class="desc">A simple, effective stack: establish authority, attract interest, and open targeted conversations. Operated from client profiles for authenticity.</p>
+          </div>
+        </div>
+
+        <div class="grid cols-3">
+          <article class="card reveal" aria-labelledby="s1" data-tilt>
+            <div class="chip">Content</div>
+            <h4 id="s1">Content Creation (Ghostwriting & Personal Branding)</h4>
+            <p>Professionally written posts and articles in the client’s voice to establish authority and trust. Aligned with growth goals and designed for consistency.</p>
+            <ul class="clean">
+              <li>Editorial calendar with topics tied to business outcomes.</li>
+              <li>Thought leadership posts, carousels, and article drafts.</li>
+              <li>Copy optimized for readability and engagement.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s2" data-tilt>
+            <div class="chip">Content</div>
+            <h4 id="s2">Profile Optimization</h4>
+            <p>Refined headlines, summaries, visuals, and keywords to position profiles as professional, trustworthy, and discoverable for the right audience.</p>
+            <ul class="clean">
+              <li>Positioning-led headline and About section.</li>
+              <li>Featured links and banners that tell a clear story.</li>
+              <li>Keyword and layout tuning for LinkedIn search.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s3" data-tilt>
+            <div class="chip">Content</div>
+            <h4 id="s3">Engagement with the Audience</h4>
+            <p>Regular interaction through comments, likes, and relevant conversations to build visibility and credibility where your buyers pay attention.</p>
+            <ul class="clean">
+              <li>Daily/weekly engagement on industry topics and posts.</li>
+              <li>Authentic comments that open conversation threads.</li>
+              <li>Signal boosting key announcements and wins.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Inbound -->
+        <div class="grid cols-2" style="margin-top:24px">
+          <article class="card reveal" aria-labelledby="s4" data-tilt>
+            <div class="chip">Inbound</div>
+            <h4 id="s4">Inbound Lead Generation</h4>
+            <p>A system where optimized profiles and consistent content bring new business opportunities directly into the inbox.</p>
+            <ul class="clean">
+              <li>Authority-led content cadence that compounds reach.</li>
+              <li>Monitoring of inbound messages and interest signals.</li>
+              <li>Best-practice reply frameworks for discovery and booking.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s5" data-tilt>
+            <div class="chip">Inbound</div>
+            <h4 id="s5">Inbound Customer Service</h4>
+            <p>Customers can reach real employees through LinkedIn, creating human, trustworthy interactions that resolve questions faster.</p>
+            <ul class="clean">
+              <li>Routing playbook for triage and hand-offs.</li>
+              <li>Shared tone-of-voice and response guidelines.</li>
+              <li>Templates for common questions and follow-ups.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Outbound -->
+        <div class="grid cols-2" style="margin-top:24px">
+          <article class="card reveal" aria-labelledby="s6" data-tilt>
+            <div class="chip">Outbound</div>
+            <h4 id="s6">ICP Identification</h4>
+            <p>Define the ideal customer profile and identify companies and decision-makers that match target criteria.</p>
+            <ul class="clean">
+              <li>Industry, size, geography, and tech-stack filters.</li>
+              <li>Role mapping across economic, technical, and user buyers.</li>
+              <li>Account lists prioritized by likelihood to engage.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s7" data-tilt>
+            <div class="chip">Outbound</div>
+            <h4 id="s7">Lead Generation</h4>
+            <p>Build and validate targeted lists of potential clients, partners, or candidates — ready for thoughtful outreach.</p>
+            <ul class="clean">
+              <li>Contact enrichment with role context and relevance cues.</li>
+              <li>List hygiene and deduplication to avoid noise.</li>
+              <li>Segmentation for tailored messages by persona.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s8" data-tilt>
+            <div class="chip">Outbound</div>
+            <h4 id="s8">Outreach Campaigns</h4>
+            <p>Personalized connection requests, considerate follow-ups, and message sequences that start meaningful conversations.</p>
+            <ul class="clean">
+              <li>Warm openers referencing context (events, content, triggers).</li>
+              <li>Multi-step sequences spaced to respect inboxes.</li>
+              <li>Conversation-first scripts that invite replies.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" aria-labelledby="s9" data-tilt>
+            <div class="chip">Outbound</div>
+            <h4 id="s9">Recruitment Campaigns</h4>
+            <p>Targeted outreach to candidates with clear role narratives and value propositions to fill open positions faster.</p>
+            <ul class="clean">
+              <li>Candidate profiles mapped to role must-haves.</li>
+              <li>Clear, respectful messaging about opportunity fit.</li>
+              <li>Follow-ups that keep pipelines moving.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="band reveal" style="margin-top:26px">
+          <div>
+            <div class="h3" style="margin:0">Want a plan tailored to your market?</div>
+            <p class="desc" style="margin:4px 0 0">Share your goals and constraints. We’ll outline messaging angles, audiences, and first-90-day actions.</p>
+          </div>
+          <a href="#contact" class="btn primary magnetic">Get a custom plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section id="founders">
+      <div class="container">
+        <div class="section-head reveal" data-stagger>
+          <div>
+            <div class="kicker">Founders</div>
+            <div class="h3">People behind the work</div>
+            <p class="desc">Hands-on operators who care about clarity, craftsmanship, and consistent execution.</p>
+          </div>
+        </div>
+        <div class="grid cols-2">
+          <article class="card reveal founder-card" data-tilt>
+            <img class="avatar" src="belmin.jpg" alt="Belmin Karalija" loading="lazy" />
+            <h4>Belmin Karalija</h4>
+            <p class="desc">Founder</p>
+            <a class="btn primary magnetic" href="https://www.linkedin.com/in/belmin-karalija-3b21b5187/" target="_blank" rel="noopener">Contact Belmin</a>
+          </article>
+          <article class="card reveal founder-card" data-tilt>
+            <img class="avatar" src="sabahudin.PNG" alt="Sabahudin Murtić" loading="lazy" />
+            <h4>Sabahudin Murtić</h4>
+            <p class="desc">Founder</p>
+            <a class="btn primary magnetic" href="https://www.linkedin.com/in/sabahudin-murtic/" target="_blank" rel="noopener">Contact Sabahudin</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+      <div class="container">
+        <div class="section-head reveal" data-stagger>
+          <div>
+            <div class="kicker">Process</div>
+            <div class="h3">A simple arc that compounds results</div>
+            <p class="desc">Clarity → Consistency → Conversations → Pipeline. No shortcuts. Just craftsmanship and iteration.</p>
+          </div>
+        </div>
+        <div class="grid cols-2">
+          <div class="card reveal" data-tilt>
+            <div class="chip">01</div>
+            <h4>Positioning & ICP</h4>
+            <p class="desc">Define the value narrative and who it’s for. Translate into profile copy, content themes, and target lists.</p>
+          </div>
+          <div class="card reveal" data-tilt>
+            <div class="chip">02</div>
+            <h4>Content & Profiles</h4>
+            <p class="desc">Ship a steady cadence of credible posts from optimized profiles that signal expertise and trust.</p>
+          </div>
+          <div class="card reveal" data-tilt>
+            <div class="chip">03</div>
+            <h4>Inbound & Engagement</h4>
+            <p class="desc">Stay present in relevant conversations. Capture and progress inbound interest with helpful replies.</p>
+          </div>
+          <div class="card reveal" data-tilt>
+            <div class="chip">04</div>
+            <h4>Outbound & Follow-ups</h4>
+            <p class="desc">Open respectful conversations with the people who matter. Follow up like a human, not a sequence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="cases">
+      <div class="container">
+        <div class="section-head reveal" data-stagger>
+          <div>
+            <div class="kicker">Case Studies</div>
+            <div class="h3">Selected outcomes</div>
+            <p class="desc">Short snapshots to show the type of results this system drives. Replace with your own examples as they arrive.</p>
+          </div>
+        </div>
+        <div class="grid cols-3">
+          <article class="card reveal" data-tilt>
+            <div class="chip">SaaS</div>
+            <h4>Founder-led content → inbound demos</h4>
+            <p class="desc">Refined profile + weekly posts + thoughtful engagement led to inbound demo requests within 30 days.</p>
+          </article>
+          <article class="card reveal" data-tilt>
+            <div class="chip">Consulting</div>
+            <h4>Outbound with context → meetings</h4>
+            <p class="desc">ICP refinement and message rewrites doubled reply rate from cold to warm conversations.</p>
+          </article>
+          <article class="card reveal" data-tilt>
+            <div class="chip">Hiring</div>
+            <h4>Role narrative → candidate pipeline</h4>
+            <p class="desc">Clear, respectful messaging about the work attracted strong candidates in under two weeks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (restored) -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head reveal" data-stagger>
+          <div>
+            <div class="kicker">FAQ</div>
+            <div class="h3">Good questions we hear a lot</div>
+          </div>
+        </div>
+        <div class="faq reveal" role="region" aria-label="Frequently Asked Questions">
+          <div class="faq-item">
+            <div class="faq-q" tabindex="0" aria-expanded="false"><strong>Do you post from company pages?</strong><span>+</span></div>
+            <div class="faq-a">We prioritize real employee profiles to keep communication personal and effective. Company pages can be supported as needed.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" tabindex="0" aria-expanded="false"><strong>Will you run paid ads?</strong><span>+</span></div>
+            <div class="faq-a">The core offer is organic content, inbound systems, and outbound conversations. Paid can be layered later if strategic.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" tabindex="0" aria-expanded="false"><strong>How soon do results arrive?</strong><span>+</span></div>
+            <div class="faq-a">Expect momentum in weeks, with compounding effects over 60–90 days as positioning, content, and outreach synchronize.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" tabindex="0" aria-expanded="false"><strong>Do you ghostwrite or post for us?</strong><span>+</span></div>
+            <div class="faq-a">We ghostwrite and operate from your employee profiles so it stays authentic and aligned with your brand.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="band reveal" style="gap:20px">
+          <div>
+            <div class="kicker">Contact</div>
+            <div class="h3" style="margin-top:6px">Let’s plan your next 90 days</div>
+            <p class="desc">Prefer social? Use the LinkedIn buttons above. Otherwise hit the email button below.</p>
+          </div>
+          <div class="actions">
+            <a class="btn primary magnetic" href="https://www.linkedin.com/in/belmin-karalija-3b21b5187/" target="_blank" rel="noopener">Contact Belmin</a>
+            <a class="btn primary magnetic" href="https://www.linkedin.com/in/sabahudin-murtic/" target="_blank" rel="noopener">Contact Sabahudin</a>
+            <a id="emailBtn" class="btn primary magnetic" href="#">Contact via Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px"><div class="logo"></div><strong>Nomad Visionaries Group</strong></div>
+        <p class="mini">© <span id="year"></span> Nomad Visionaries Group. All rights reserved.</p>
+        <p class="mini"><a href="https://www.nomadvgroup.com" target="_blank" rel="noopener">www.nomadvgroup.com</a></p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p class="mini"><a href="mailto:belmin@nomadvgroup.com">belmin@nomadvgroup.com</a><br/><a href="mailto:sabahudin@nomadvgroup.com">sabahudin@nomadvgroup.com</a></p>
+      </div>
+      <div>
+        <strong>Socials</strong>
+        <div class="socials" style="margin-top:8px">
+          <a class="social linkedin" href="https://www.linkedin.com/company/nomadvgroup" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a>
+          <a class="social facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"></a>
+          <a class="social instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"></a>
+          <a class="social x" href="#" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const header = document.querySelector('.header');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger){
+      hamburger.addEventListener('click', () => {
+        const open = navLinks.style.display === 'flex';
+        navLinks.style.display = open ? 'none' : 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.background = '#120e17';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = header.offsetHeight + 'px';
+        navLinks.style.right = '20px';
+        navLinks.style.padding = '12px';
+        navLinks.style.border = '1px solid rgba(224,214,255,.15)';
+        navLinks.style.borderRadius = '16px';
+        hamburger.setAttribute('aria-expanded', (!open).toString());
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const el = entry.target;
+          el.classList.add('show');
+          if(el.dataset.stagger !== undefined){
+            const children = el.parentElement.querySelectorAll('.card, .metric');
+            children.forEach((c, i)=>{
+              c.style.transitionDelay = 60 * i + 'ms';
+              c.classList.add('show');
+            });
+          }
+          io.unobserve(el);
+        }
+      });
+    }, {threshold: .12});
+    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+    // Button ripple + magnetic
+    const buttons = document.querySelectorAll('.btn, .cta-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e)=>{
+        const r = document.createElement('span');
+        r.style.position = 'absolute';
+        r.style.inset = '0';
+        r.style.borderRadius = 'inherit';
+        r.style.background = 'radial-gradient(circle at ' + (e.offsetX||0) + 'px ' + (e.offsetY||0) + 'px, rgba(224,214,255,.35), rgba(224,214,255,0) 45%)';
+        r.style.pointerEvents = 'none';
+        r.style.opacity = '0';
+        r.style.transition = 'opacity .6s ease';
+        btn.appendChild(r);
+        requestAnimationFrame(()=>{ r.style.opacity = '1'; });
+        setTimeout(()=>{ r.style.opacity = '0'; setTimeout(()=> r.remove(), 400); }, 120);
+      });
+
+      if(!reduceMotion && matchMedia('(hover:hover)').matches && btn.classList.contains('magnetic')){
+        const strength = 14;
+        btn.addEventListener('mousemove', (e)=>{
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width/2;
+          const y = e.clientY - rect.top - rect.height/2;
+          btn.style.transform = `translate(${x/strength}px, ${y/strength}px)`;
+        });
+        btn.addEventListener('mouseleave', ()=>{ btn.style.transform = ''; });
+      }
+    });
+
+    // 3D tilt
+    if(!reduceMotion && matchMedia('(hover:hover)').matches){
+      document.querySelectorAll('[data-tilt]').forEach(card =>{
+        const maxTilt = 7;
+        const reset = ()=>{ card.style.transform = ''; card.style.transition = 'transform .18s ease'; }
+        card.addEventListener('mousemove', (e)=>{
+          const r = card.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width - .5;
+          const py = (e.clientY - r.top) / r.height - .5;
+          const rx = (py * -maxTilt).toFixed(2);
+          const ry = (px *  maxTilt).toFixed(2);
+          card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
+          card.style.transition = 'transform 0s';
+        });
+        card.addEventListener('mouseleave', reset);
+      });
+    }
+
+    // FAQ toggles (+ to –)
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const a = q.nextElementSibling;
+        const open = a.style.display === 'block';
+        a.style.display = open ? 'none' : 'block';
+        q.setAttribute('aria-expanded', (!open).toString());
+        const symbol = q.querySelector('span');
+        if(symbol){ symbol.textContent = open ? '+' : '–'; }
+      });
+      q.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); q.click(); } });
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Inline SVG icons for socials
+    const iconSVGs = {
+      linkedin: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="4" stroke="#e0d6ff" stroke-width="1.4"/><path d="M7.2 10.2v6.2M7.2 7.6v.2" stroke="#e0d6ff" stroke-width="1.8" stroke-linecap="round"/><path d="M11.2 16.4v-6.2h2.8m0 0a3 3 0 013 3v3.2" stroke="#e0d6ff" stroke-width="1.4" stroke-linecap="round"/></svg>',
+      facebook: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="4" stroke="#e0d6ff" stroke-width="1.4"/><path d="M13 10h2V8h-2c-1.1 0-2 .9-2 2v2H9v2h2v4h2v-4h2v-2h-2v-2z" fill="#e0d6ff"/></svg>',
+      instagram: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#e0d6ff" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke="#e0d6ff" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="1.2" fill="#e0d6ff"/></svg>',
+      x: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="4" stroke="#e0d6ff" stroke-width="1.4"/><path d="M7 7l10 10M17 7L7 17" stroke="#e0d6ff" stroke-width="1.6" stroke-linecap="round"/></svg>'
+    };
+    document.querySelectorAll('.socials a').forEach(a=>{
+      const cls = Array.from(a.classList).find(c=> iconSVGs[c]);
+      if(cls){ a.innerHTML = iconSVGs[cls]; }
+    });
+
+    // Prefilled email (To + CC)
+    const emailBtn = document.getElementById('emailBtn');
+    const subject = encodeURIComponent('Website Inquiry — Your Name / Company');
+    const body = encodeURIComponent(
+`Hi Nomad Visionaries Group,
+
+I’m interested in (briefly describe need).
+Company:
+Website/LinkedIn:
+Ideal start date:
+Notes:
+
+Thanks!`
+    );
+    if(emailBtn){
+      emailBtn.href = `mailto:belmin@nomadvgroup.com?cc=sabahudin@nomadvgroup.com&subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #2c262e;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(70,49,135,0.9);
+  color: white;
+  padding: 1rem 2rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #c1ff75;
+  transition: width 0.3s;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #463187, #e0d6ff);
+  color: white;
+}
+.hero .socials img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
+.services {
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+.services .card {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.services .card:hover {
+  transform: scale(1.05);
+  background-color: #e0d6ff;
+}
+.founders {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.founder-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.founder-card:hover {
+  transform: translateY(-5px);
+}
+.connect-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #463187;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.connect-btn:hover {
+  background-color: #c1ff75;
+  color: #2c262e;
+  transform: scale(1.1);
+}
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: #463187;
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c262e;
+  color: white;
+}
